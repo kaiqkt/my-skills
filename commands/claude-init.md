@@ -115,7 +115,7 @@ Current package layout:
 
 [Summary of what is actively being worked on — update as priorities change]
 
-## AI Behavior Rules
+## Rules
 
 - No emojis in code or comments.
 - Keep responses concise and practical.
