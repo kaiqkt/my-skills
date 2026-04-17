@@ -140,7 +140,7 @@ Task format:
 
 - Explain trade-offs for every decision (e.g., "CP vs AP", "SQL vs NoSQL for this use case").
 - Use real numbers when estimating (requests/sec, storage in GB, latency in ms).
-- Reference technologies I know: Spring Boot, FastAPI, PostgreSQL, MongoDB, Redis, Kafka, Flink, Docker, K8s.
+- Use the technologies present in the project or explicitly requested by the user — do not assume or suggest alternatives unless asked.
 - This is a learning exercise — teach me the reasoning, not just the answer.
 - Simplicity: avoid premature optimization; keep the design as simple as possible to solve current problems.
 - Design for Failure: assume components will fail and incorporate redundancy.
