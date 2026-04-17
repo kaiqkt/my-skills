@@ -144,8 +144,8 @@ Task format:
 
 Use Mermaid diagrams to illustrate architecture, data models, and flows. Apply them in the following contexts:
 
-- **High-Level Architecture** — use `graph TD` or `graph LR` to show services and communication paths.
-- **Data Design** — use `erDiagram` for entity relationships and schema structure.
+- **High-Level Architecture** — use `graph TD` or `graph LR` to show services and communication paths. Use `C4Context` when the system has external integrations (third-parties, gateways, other services).
+- **Data Design** — use `erDiagram` for entity relationships and schema structure. Use `stateDiagram-v2` when an entity has a relevant lifecycle (e.g., order status, payment state).
 - **Flows** (within tasks or design sections) — use `sequenceDiagram` for request/response flows, or `flowchart` for decision logic.
 
 Always embed diagrams inside fenced code blocks:
