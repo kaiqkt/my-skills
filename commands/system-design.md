@@ -131,10 +131,36 @@ Task format:
 **Status:** `todo`
 **Description:** [Derived from the design]
 **User Story:** As a [user/developer], I want [action] so that [benefit].
+
+[Optional Mermaid diagram if it helps clarify the scope of the task]
 ```
 
 5. Update `docs/backlog/index.md` after all tasks are written (same rules as the `/backlog` skill).
 6. Report how many tasks were created and in which contexts.
+
+---
+
+### Mermaid diagrams
+
+Use Mermaid diagrams to illustrate architecture, data models, and flows. Apply them in the following contexts:
+
+- **High-Level Architecture** — use `graph TD` or `graph LR` to show services and communication paths.
+- **Data Design** — use `erDiagram` for entity relationships and schema structure.
+- **Flows** (within tasks or design sections) — use `sequenceDiagram` for request/response flows, or `flowchart` for decision logic.
+
+Always embed diagrams inside fenced code blocks:
+
+````markdown
+```mermaid
+graph TD
+  A[Client] --> B[API Gateway]
+  B --> C[Auth Service]
+  B --> D[Order Service]
+  D --> E[(PostgreSQL)]
+```
+````
+
+Include a diagram wherever a visual representation reduces ambiguity. Do not add diagrams for trivial relationships that are clear from text alone.
 
 ---
 
